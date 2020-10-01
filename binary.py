@@ -15,12 +15,12 @@ class BinarySearch(object):
         first_element = 0
         last_element = self.a - 1
         count = 0
-        # check if value is == to first or last elements first
+        # check if value is equal to first or last elements first
         if self.alist[first_element] == value:
             return {'count': 0, 'index': first_element}
         if self.alist[last_element] == value:
             return {'count': 0, 'index': last_element}
-        # if not loop through the list while updating the count
+        # an nested loop because if  list is not looped while updating the count
         while first_element <= last_element:
             mid_point = (first_element + last_element) // 2
             count += 1
